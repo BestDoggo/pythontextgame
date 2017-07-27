@@ -46,7 +46,7 @@ def attack_emeny():
                 break
             monster.health = monster.health - (5 + mychar.attack - monster.defense)
             mychar.health = mychar.health - (monster.attack - mychar.defense)
-            print(monster.health);print(mychar.health)
+            print("Monster health:",monster.health);print("Character health:",mychar.health)
         elif answer == "flee":
             print("you ran.. fgt")
             break
@@ -112,6 +112,9 @@ while condition:
         print("Please input again")
 
 print("hello", mychar.name)
+print("Welcome to a very simple python text based game")
+print("Type commands for a list of commands.")
+print("good luck!")
 while True:
     command = input("")
     if command == "commands" or command == "command":
@@ -119,6 +122,7 @@ while True:
         print('"end" to break')
         print('"look" to look around the room')
         print('"players" to see the player list')
+        print("if there's a monster just type attack or flee")
     if command == "look":
         mychar.look()
     if command == ("n" or "north"):
